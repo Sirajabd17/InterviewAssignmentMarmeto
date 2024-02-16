@@ -29,3 +29,7 @@
 
 - Adding filtering and sorting options for better product navigation.
 - Enhancing user interaction with features like product previews or quick add-to-cart functionality.
+
+  7.**Livelink**
+
+- https://leafy-mermaid-18dae9.netlify.app
