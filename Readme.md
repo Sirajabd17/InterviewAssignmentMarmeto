@@ -1,67 +1,31 @@
 # Coding Assessment L-2 Code Submission Process with Boilerplate
 
-Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.
+1. **Project Name:**
 
-## Getting Started
+- E-Commerce Product Cards
 
-1. **Clone or Download:**
-   - If using Git, clone the repository using the following command:
-     ```
-     git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-     ```
-   - Alternatively, download the code as a ZIP file and extract it.
+2. **Description:**
 
-2. **Navigate to Project Directory:**
+- A dynamic web application that fetches product data from an external API and displays it in responsive product cards.
 
-3. **Explore the Structure:**
-Take a moment to review the project structure:
+3. **Features:**
 
-        project-root/
-        |-- index.html
-        |-- style.css
-        |-- script.js
-        |-- README.md
-- `index.html`: Main HTML file for your project.
-- `style.css`: CSS file for styling.
-- `script.js`: JavaScript file for scripting logic.
-- `README.md`: Documentation for your project.
-  
-> **Important:** Avoid using additional files or a single file for your code. Feel free to organize asset files by creating a separate folder.
+- Fetches product data from the provided API endpoint.
+- Displays product information such as name, image, badge, price, vendor, and compare_at_price.
+- Uses DOM manipulation to dynamically create and populate product cards.
+- Implements responsive design to ensure optimal viewing experience across various devices.
 
-## Development and Testing
+4. **Technologies Used:**
+   HTML, CSS, JavaScript
+   External API for product data retrieval
+   Responsive design with CSS media queries
+5. **Development Process:**
 
-4. **Start Working:**
-- Read all requirements that are shared with design files.
-- Open `index.html` in your browser to view the initial state of the project, And start coding.
-- Modify the `style.css` and `script.js` files to implement your solution.
-5. **Testing:**
-- Test your code to ensure it produces the expected output.
-- Ensure that the console (Developer Tools) does not display any errors.
+- Data fetching: Utilized JavaScript fetch API to retrieve product data from the provided API endpoint.
+- DOM manipulation: Dynamically generated HTML elements to display product information based on the fetched data.
+- Responsive design: Implemented responsive layout using CSS media queries to adapt the product cards for different screen sizes.
 
+6. **Future Enhancements:**
 
----
-## Submission Guidelines
-
-### Option 1: GitHub Repository
-
-1. Create a new public repository on GitHub.
-2. Upload your project files (index.html, style.css, script.js) to the repository.
-3. Write a brief description of your project in the README.md file.
-4. Share the repository URL with us.
-
-### Option 2: ZIP File on Google Drive
-
-1. Create a ZIP file of your entire project.
-2. Upload the ZIP file to your Google Drive.
-3. Share the public link to the ZIP file via email.
-
-## Hosting (Bonus)
-You can earn bonus points by hosting your project on a free hosting platform such as GitHub Pages or Netlify.
-
-## Important Notes
-
-- Do not use any third-party libraries or frameworks.
-- Ensure that your project works as intended and is free from errors.
-- Make sure to include clear instructions on how to run your project (if necessary).
-
-Feel free to reach out to invigilator at `rishabh@marmeto.com` if you have any questions. Good luck! We look forward to reviewing your submission.
+- Adding filtering and sorting options for better product navigation.
+- Enhancing user interaction with features like product previews or quick add-to-cart functionality.

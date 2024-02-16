@@ -5,32 +5,155 @@ body {
   width: 100%;
   margin: 0;
 }
-body {
+
+#heading {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px;
+}
+#product-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border-radius: 10px;
+  padding: 2px;
+
+  width: 160px;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-image {
+  width: auto;
+  height: 200px;
+
+  overflow: hidden;
+}
+
+.title_brand {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_brand h5 {
+  font-size: 16px;
+  margin: 16px 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title_brand p {
+  color: gray;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.badge {
+  background-color: rgb(204, 203, 203);
+  color: black;
+  font-size: small;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.price {
+  font-size: 1.1rem;
+}
+.price span {
+  font-size: smaller;
+}
+
+.vendor {
+  font-size: larger;
+}
+button {
+  background-color: #050505;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  width: 50%;
+  margin: auto;
+  background: gray;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  width: 50%;
+  margin: auto;
+  background-color: rgb(167, 164, 164);
+
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: black;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
-}
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-  text-decoration: none;
+.price h5 {
+  color: gray;
+  text-decoration: line-through;
 }
-a:active {
-  transform: scale(0.98);
+.price span {
+  color: red;
 }
 
+#changeCard button:hover {
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .product-card {
+    width: 50%;
+    height: auto;
+  }
+
+  .title_brand {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .price {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 5px;
+  }
+}
